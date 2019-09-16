@@ -24,9 +24,18 @@ namespace Uppgift_1
             Console.WriteLine("Uppgift 1.2");
             //tanken, räkna antal mellanslag i meningen?
             int wordcount = 1; //dvs när ett space hittas är det ord 2
-            for (int i = 0; i < userresponse.Length; i++)
+            //for (int i = 0; i < userresponse.Length; i++)
+            //{
+            //    if (userresponse[i] == ' ')
+            //    {
+            //        wordcount++;
+            //    }
+            //}
+            //Hmm, jobbigt, kan man inte bara fråga string om den har ngt space?
+            //ah, måste lära mig mer om string!
+            foreach (char c in userresponse)
             {
-                if (userresponse[i] == ' ')
+                if (c == ' ')
                 {
                     wordcount++;
                 }
